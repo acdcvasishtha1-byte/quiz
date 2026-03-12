@@ -8,14 +8,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-        /* પવિત્ર દેવનાગરી ફોન્ટ */
+     
         @import url('https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap');
         
         * {
             font-family: 'Tiro Devanagari Sanskrit', 'Poppins', serif;
         }
 
-        /* ભવ્ય પૃષ્ઠભૂમિ – મંદિર જેવી આભા */
+      
         body {
             background: radial-gradient(circle at 0% 30%, #fbbf24 0%, #b45309 40%, #2d1b0b 100%);
             min-height: 100vh;
@@ -23,7 +23,7 @@
             overflow-x: hidden;
         }
 
-        /* વૈદિક તત્વો – તરતા પ્રતીકો */
+       
         .divine-float {
             position: fixed;
             font-size: 4rem;
@@ -41,7 +41,7 @@
             100% { transform: translateY(0px) rotate(0deg) scale(1); }
         }
 
-        /* મુખ્ય કાર્ડ – મંડપ શૈલી */
+       
         .sanatan-card {
             background: rgba(255, 245, 220, 0.92);
             backdrop-filter: blur(16px);
@@ -52,7 +52,7 @@
             transition: all 0.4s;
         }
 
-        /* શીર્ષક – કલશ અને દીવા સાથે */
+     
         .title-gold {
             background: linear-gradient(145deg, #ffd966, #b45309);
             -webkit-background-clip: text;
@@ -63,7 +63,7 @@
             letter-spacing: 6px;
         }
 
-        /* વિકલ્પ બટન – આસન જેવા */
+      
         .option-btn {
             background: #fcf3d7;
             border: 4px solid #c29a2b;
@@ -110,7 +110,7 @@
             pointer-events: none;
         }
 
-        /* પ્રગતિ પટ્ટી – હવનની જ્વાળા */
+       
         .vedic-progress {
             background: linear-gradient(90deg, #fbbf24, #ea580c, #dc2626, #fbbf24);
             background-size: 300% 100%;
@@ -125,7 +125,7 @@
             100% { background-position: 200% 50%; }
         }
 
-        /* નેવિગેશન બટન – ગુજરાતી ટેક્સ્ટ "પાછળ" અને "આગળ" */
+        
         .nav-btn {
             background: #854d0e;
             border: 4px solid #fbbf24;
@@ -158,7 +158,7 @@
             pointer-events: none;
         }
 
-        /* પરિણામ પટલ – હવન કુંડ */
+    
         .havan-kund {
             background: #fffbeb;
             border: 8px double #b45309;
@@ -167,14 +167,13 @@
             padding: 2.5rem;
         }
 
-        /* મોબાઇલ મૈત્રી */
         @media (max-width: 650px) {
             .option-btn { font-size: 1.2rem; padding: 0.9rem; }
             .nav-btn { font-size: 1.6rem; padding: 0.8rem 1.5rem; min-width: 130px; }
             .sanatan-card { border-radius: 4rem 1.5rem 4rem 1.5rem; }
         }
 
-        /* કલશ સ્પંદન */
+       
         .kalash {
             animation: kalashSpandan 2.2s infinite alternate;
             filter: drop-shadow(0 0 20px gold);
@@ -189,7 +188,7 @@
 </head>
 <body class="relative flex items-center justify-center p-2 sm:p-4">
 
-    <!-- તરતા દિવ્ય પ્રતીકો (સનાતન) -->
+   
     <div class="divine-float" style="top: 2%; left: 3%;">🕉️</div>
     <div class="divine-float" style="top: 12%; right: 1%; animation-delay: -4s;">🔱</div>
     <div class="divine-float" style="bottom: 8%; left: 7%; animation-delay: -2s;">🪷</div>
@@ -199,39 +198,33 @@
     <div class="divine-float" style="bottom: 25%; left: 20%;">📿</div>
     <div class="divine-float" style="top: 85%; right: 18%;">🔔</div>
 
-    <!-- મુખ્ય પાત્ર -->
+    
     <div class="w-full max-w-5xl relative z-20 my-4 md:my-8">
 
-        <!-- શીર્ષક – મંગલમય -->
+       
         <div class="text-center mb-6 md:mb-10">
-            <div class="flex justify-center items-center gap-4">
-                <span class="kalash">🏺</span>
-                <h1 class="text-5xl sm:text-6xl md:text-7xl font-black title-gold tracking-widest leading-tight">
-                    સનાતન જ્ઞાન
-                </h1>
-                <span class="kalash">🪔</span>
-            </div>
+           
             <div class="bg-black/50 inline-block px-8 py-3 rounded-full text-3xl text-yellow-200 font-bold mt-5 backdrop-blur-sm border-4 border-amber-500 shadow-2xl">
                 રામાયણ 🌿 ગીતા
             </div>
         </div>
 
-        <!-- મુખ્ય કાર્ડ – મંડપ -->
+        
         <div class="sanatan-card p-5 sm:p-7 md:p-9">
 
-            <!-- પ્રગતિ અને સ્કોર (સનાતન માપ) -->
+          
             <div class="flex flex-wrap items-center justify-between gap-3 bg-amber-900/30 p-4 rounded-full border-2 border-amber-400 mb-8 text-amber-900 text-2xl font-bold">
                 <div class="flex items-center gap-4 bg-amber-100/90 px-7 py-3 rounded-full shadow-inner">
                     <i class="fas fa-om text-4xl text-amber-800"></i>
                     <span><span id="current-question">1</span>/<span id="total-questions">20</span></span>
                 </div>
                 <div class="flex items-center gap-4 bg-amber-100/90 px-7 py-3 rounded-full shadow-inner">
-                    <i class="fas fa-star-and-crescent text-4xl text-amber-800"></i>
+                   
                     <span>સ્કોર: <span id="score">0</span></span>
                 </div>
             </div>
 
-            <!-- યજ્ઞ પ્રગતિ પટ્ટી (અગ્નિ) -->
+           
             <div class="w-full h-6 bg-stone-900 rounded-full mb-8 border-2 border-amber-400 shadow-2xl overflow-hidden">
                 <div id="progress" class="vedic-progress h-full rounded-full transition-all duration-700" style="width: 5%;"></div>
             </div>
@@ -253,10 +246,10 @@
                 <!-- નેવિગેશન: ગુજરાતીમાં પાછળ / આગળ -->
                 <div class="flex flex-wrap justify-between items-center gap-4">
                     <button id="prev-btn" class="nav-btn" disabled>
-                        <i class="fas fa-arrow-left mr-3"></i> પાછળ
+                        <i class="fas fa-arrow-left mr-3"></i> BACK
                     </button>
                     <button id="next-btn" class="nav-btn">
-                        આગળ <i class="fas fa-arrow-right ml-3"></i>
+                       <i class="fas fa-arrow-right ml-3"></i> NEXT
                     </button>
                 </div>
             </div>
@@ -271,27 +264,24 @@
                     <span id="final-score">0</span>/<span id="final-total">20</span>
                 </div>
 
-                <!-- ગતિશીલ સંદેશ પટલ -->
+                
                 <div id="performance-message" class="text-3xl md:text-4xl bg-amber-100 p-8 rounded-[70px] border-4 border-amber-700 shadow-inner mb-8 font-bold">
-                    <!-- ડાયનેમિક -->
+                
                 </div>
 
-                <!-- પુનઃ શરૂ બટન – યજ્ઞ પુનઃ પ્રજ્વલિત -->
+                
                 <button id="restart-btn" class="bg-gradient-to-r from-orange-700 to-red-800 text-white px-14 py-6 rounded-full text-3xl md:text-4xl font-black hover:scale-110 transition-transform shadow-2xl border-4 border-amber-400 flex items-center gap-6 mx-auto">
                     <i class="fas fa-fire"></i> ફરી શરૂ કરો
                 </button>
             </div>
         </div>
 
-        <!-- પાદ ટીકા -->
-        <div class="text-center mt-7 text-amber-100 text-2xl flex justify-center gap-6 items-center">
-            <span class="animate-pulse">🔱</span> જય શ્રી રામ <span class="animate-pulse">🚩</span>
-        </div>
+        
     </div>
 
     <script>
         (function() {
-            // ---------- 20 પ્રશ્નો: રામાયણ + ગીતા (ગુજરાતી) ----------
+           
             const quizData = [
                 { question: "રામાયણના રચયિતા કોણ છે?", options: ["વાલ્મીકિ", "વ્યાસ", "તુલસીદાસ", "કાલિદાસ"], correct: 0 },
                 { question: "ભગવાન રામના પિતાનું નામ શું?", options: ["દશરથ", "જનક", "વિશ્વામિત્ર", "વસિષ્ઠ"], correct: 0 },
@@ -315,12 +305,12 @@
                 { question: "સીતા સ્વયંવરમાં શિવ ધનુષ કોણે તોડ્યું?", options: ["રામ", "લક્ષ્મણ", "પરશુરામ", "જનક"], correct: 0 }
             ];
 
-            // સ્થિતિ
+          
             let currentQuestion = 0, score = 0;
             let userAnswers = new Array(quizData.length).fill(null);
             let quizCompleted = false;
 
-            // DOM તત્વો
+            
             const questionEl = document.getElementById('question-text');
             const optionsDiv = document.getElementById('options-container');
             const currentQspan = document.getElementById('current-question');
@@ -339,7 +329,7 @@
             totalQspan.textContent = quizData.length;
             finalTotal.textContent = quizData.length;
 
-            // પ્રશ્ન લોડ કરો
+           
             function loadQuestion() {
                 const q = quizData[currentQuestion];
                 questionEl.textContent = q.question;
@@ -375,7 +365,7 @@
                 if (currentQuestion === quizData.length - 1) {
                     nextBtn.innerHTML = `પૂર્ણ <i class="fas fa-check-circle ml-3"></i>`;
                 } else {
-                    nextBtn.innerHTML = `આગળ <i class="fas fa-arrow-right ml-3"></i>`;
+                    nextBtn.innerHTML = `NEXT <i class="fas fa-arrow-right ml-3"></i>`;
                 }
             }
 
@@ -396,7 +386,7 @@
                     else if (i === index && i !== q.correct) btns[i].classList.add('wrong');
                 }
 
-                // દિવ્ય સ્પાર્કલ્સ (સનાતન આતિશબાજી)
+               
                 for (let i = 0; i < 12; i++) {
                     let spark = document.createElement('div');
                     spark.className = 'fixed w-2 h-2 bg-yellow-300 rounded-full pointer-events-none z-50';
@@ -412,7 +402,7 @@
                 progressBar.style.width = ((answeredCount) / quizData.length * 100) + '%';
             }
 
-            // પરિણામ બતાવો
+          
             function showResults() {
                 quizSection.classList.add('hidden');
                 resultSection.classList.remove('hidden');
@@ -450,7 +440,7 @@
                 loadQuestion();
             }
 
-            // ઇવેન્ટ લિસનર
+           
             prevBtn.addEventListener('click', ()=>{
                 if (currentQuestion > 0) { currentQuestion--; loadQuestion(); }
             });
@@ -474,7 +464,7 @@
 
             loadQuestion();
 
-            // સ્પાર્ક એનિમેશન માટે સ્ટાઇલ ઉમેરો
+            
             const style = document.createElement('style');
             style.innerHTML = `@keyframes floatOm { 0% { transform: scale(1) translateY(0); opacity:1; } 100% { transform: scale(2) translateY(-120px); opacity:0; }}`;
             document.head.appendChild(style);
