@@ -410,10 +410,10 @@
 
                 const percent = (score / quizData.length) * 100;
                 let message = '';
-                if (percent >= 80) message = '🌟 ધન્ય! તમે સનાતન જ્ઞાનના ભંડાર છો. જય શ્રીરામ!';
-                else if (percent >= 60) message = '📿 સાધુવાદ! નિરંતર અધ્યયન કરો.';
-                else if (percent >= 40) message = '🪷 સરસ પ્રયાસ, વધુ વાંચો.';
-                else message = '🔱 અભ્યાસ કરો, ફરી પ્રયત્ન કરો. ૐ નમઃ શિવાય.';
+                if (percent >= 80) message = '';
+                else if (percent >= 60) message = '';
+                else if (percent >= 40) message = '';
+                else message = '';
 
                 perfMsg.innerHTML = `<span class="text-5xl mr-4">${percent>=80?'🚩':percent>=60?'📚':'🪔'}</span> ${message}`;
                 
